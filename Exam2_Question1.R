@@ -1,4 +1,4 @@
-#### Exam2_Qustion1
+#### Exam2_Question1
 #### What is the estimated mean product satisfaction according to a customer's level of health consciousness? ----
 #### Are there important differences in mean satisfaction between these groups ----
 #### load libraries
