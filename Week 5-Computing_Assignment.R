@@ -63,7 +63,8 @@ t.test(income ~ ownHome, data=subset(seg.df, Segment=="Travelers"))
 ###3-a-ch6.5 ANOVA####
 seg.aov.own <- aov(income ~ ownHome, data=seg.df)
 anova(seg.aov.own)
-###The value of Pr(>F)for ownHomeis the p-value and reflects that there is significant variation in income between those who do and do not own their own homes. 
+###The value of Pr(>F)for ownHomeis the p-value and reflects that there is significant variation in income between those who do and do not own 
+###their own homes. 
 
 ###3-b----
 # t-test p-value = 0.001195
@@ -74,9 +75,11 @@ anova(seg.aov.seg)
 ###The value of Pr(>F) is very close to zero, confirming that income varies significantly by segment.
 # two-way aov
 anova(aov(income ~ Segment + ownHome, data=seg.df))
-#The results indicate that when we try to explain differences in income by both egment and ownHome, segment is a significant predictor (p << 0.01) but home ownership is not a significant predictor.Yet 
+###The results indicate that when we try to explain differences in income by both egment and ownHome, segment is a significant predictor (p << 0.01) 
+###but home ownership is not a significant predictor.Yet 
 anova(aov(income ~ Segment * ownHome, data=seg.df))
-#segment is a significant predictor, while home ownership and the interaction of segment with home ownership are not significant. In other words, segment membership is again the best predictor on its own.
+#segment is a significant predictor, while home ownership and the interaction of segment with home ownership are not significant. In other words, 
+#segment membership is again the best predictor on its own.
 
 ###3-c Ch6.5.1 compare models----
 anova(aov(income ~ Segment, data=seg.df),
