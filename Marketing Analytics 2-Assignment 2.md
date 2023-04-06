@@ -1,16 +1,10 @@
-ndividual Name:              _______________________________________________
+# Overview
+1. Background and Technical Setup
+2. Part Worth Calculations
+3. Market Share Estimation
+4. Data Interpretation
  
-Team Member Names:           _______________________________________________
- 
-Date:                        _______________________________________________
- 
-Overview
-1.Background and Technical Setup
-2.Part Worth Calculations
-3.Market Share Estimation
-4.Data Interpretation
- 
-1.Background  and Technical Setup
+1. Background  and Technical Setup
  
 You are the marketing manager for Acme Espresso Machines (fictitious), a small manufacturer of premium coffee maker machines. You are in a market dominated by several large manufacturers, including Breville, DeLonghi, Gaggia, and Rancilio. To improve Acme’s market share, you plan to analyze the market with several objectives in mind:
  
