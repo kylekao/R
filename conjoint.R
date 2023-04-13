@@ -18,27 +18,26 @@ print(imp)
 ## Step8. Part-Worth Calculation(Assess importance of each level)
 partntil <- caPartUtilities(preferences,profiles,levelnames)
 print(partntil)
+## the result will show which artibute has higher imprtance base on preference
 
 ## Step9. Market Share Estimattion(Predict preferences of products)
 simul <- read.csv("/Users/kyle/profiles.csv",header = T)
 maxutil <- caMaxUtility(simul,preferences,profiles)
 print(maxutil)
+# the result will distribuute in total 100 to see which profile has higher preference
+
 ## Step9. Market Share Estimation(Bradley-Terry-Luce (BTL))
 btl <- caBTL(simul, preferences, profiles)
 print(btl)
 ## Step10. Data Interpretation
 ### Findings
-#### From the part worth calculations, we note that speed was the most important attribute, followed by price as the second most important. Capacity was third. 
-
+#### From the part worth calculations to define which is higher artributes
+#### From Market Share Estimattion(Predict preferences of products) to find out which one has higher prefderence. Seek to maximize their utility with the one machine.
+#### From Market Share Estimation(Bradley-Terry-Luce (BTL)) that a probabilistic method for market share estimation should be used to see where buyers will purchase multiple machines.
 ### Conclusion
-#### We also interpret the result by Part Worth Calculations and Market Share Estimation that 
-#### card 3 (fast, multi-cup, and higher price) and card 1 (fast. Single-cup, and lower price) covered all the preference. This means speed of coffee maker machines dominate the market.
 
 ### Recommendations
-#### In summary, the interpretation results in 3 recommendations:
-#### 1.Develop card3 and card1 to maximize sales
-#### 2.Emphasize the speed of the machine in marketing messages
-#### 3.Emphasize the value that the machine delivers, and how its price represents a bargain.
+#### In summary, the interpretation results in recommendations:
 
 ### Reference
 
